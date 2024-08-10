@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator(pro)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <input id="display" class="display" readonly>
+        
+            
+        <div class="buttons">
+            <button onclick="clearDisplay()"  class="item lightgray">AC</button>
+            <button onclick="appendToDisplay('%')" class="item lightgray">%</button>
+            <button onclick="deleteLast()" class="item lightgray">del</button>
+            <button onclick="appendToDisplay('/')" class="item lightgray">/</button>
+            <button onclick="appendToDisplay('7')" class="item darkgray">7</button>
+            <button onclick="appendToDisplay('8')" class="item darkgray">8</button>
+            <button onclick="appendToDisplay('9')" class="item darkgray">9</button>
+            <button onclick="appendToDisplay('*')"class="item lightgray">x</button>
+            <button onclick="appendToDisplay('4')"class="item darkgray">4</button>
+            <button onclick="appendToDisplay('5')" class="item darkgray">5</button>
+            <button onclick="appendToDisplay('6') "class="item darkgray">6</button>
+            <button onclick="appendToDisplay('-')" class="item lightgray">-</button>
+            <button onclick="appendToDisplay('1')" class="item darkgray">1</button>
+            <button onclick="appendToDisplay('2')" class="item darkgray">2</button>
+            <button onclick="appendToDisplay('3')" class="item darkgray">3</button>
+            <button onclick="appendToDisplay('+')" class="item lightgray">+</button>
+            <button onclick="appendToDisplay('00')" class="item darkgray">00</button>
+            <button onclick="appendToDisplay('')" class="item darkgray">0</button>
+            <button onclick="appendToDisplay('.')" class="item darkgray">.</button>
+            <button onclick="calculate()" class="item orange">=</button>
+
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

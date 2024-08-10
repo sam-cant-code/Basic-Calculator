@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("woodbackground.jpg");
+}
+
+.display{
+    padding: 10px;
+    width: 402px;
+    height: 300px;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-align: right;
+    font-size: 5em;
+}
+
+.container{
+    background-color: black;
+    height: 915px;
+    width: 450px;
+    border:#a1a1a1;
+    border-radius: 25px;
+    box-shadow: 8px 8px 10px black;
+   
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+    gap: 10px;
+    padding: 20px;
+    padding-right: 10px;
+}
+
+.item{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    font-size:2rem;
+    border: none;
+   
+}
+
+/* coloring and adding effects for buttons */
+
+.darkgray{
+    background-color: hsl(0, 0%, 10%)
+}
+.darkgray:active{
+    transform: scale(0.95);
+    background-color: hsl(0, 0%, 20%);
+    
+}
+.orange{
+    background-color: hsl(17, 99%, 64%);
+}
+.orange:active{
+    transform: scale(0.95);
+    background-color: hsl(17, 99%, 74%);
+}
+.lightgray{
+    background-color: hsl(0, 0%, 30%);
+}
+.lightgray:active{
+    transform: scale(0.95);
+    background-color: hsl(0, 0%, 40%);
+}
